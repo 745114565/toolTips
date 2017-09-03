@@ -31,3 +31,34 @@ this demo use css3
 > `:before` 选择器：在被选元素的内容前面插入内容
 
 >   注意：需使用 `content` 属性来指定要插入的内容
+
+* 设置元素前后动态生成的内容不会影响钙元素原来样式
+
+``` css
+*,*:after,*:before{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+}
+```
+
+* 使生成的元素变成块状元素
+
+``` css
+*:after,*:before{
+	display: block;
+	content: "";
+}
+```
+
+* `:after` 清除浮动
+
+``` css
+*:after{
+	clear: both;
+}
+```
+
+
