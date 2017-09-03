@@ -24,3 +24,8 @@ this demo use css3
 	text-size-adjust:none;
 ```
 
+* `:after` 与 `:before`
+
+> `:after` 选择器：在被选元素的内容后面插入内容
+> `:before` 选择器：在被选元素的内容前面插入内容
+>注意：需使用 `content` 属性来指定要插入的内容
