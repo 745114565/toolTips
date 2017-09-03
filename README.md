@@ -61,4 +61,6 @@ this demo use css3
 }
 ```
 
+* html元素被设置为绝对定位以后，自动转为blok(块状)
 
+* [FontAwesome](https://fontawesome.com/ "FontAwesome") 字体库
