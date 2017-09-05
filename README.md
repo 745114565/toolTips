@@ -66,12 +66,11 @@ this demo use css3
 * [FontAwesome](https://fontawesome.io "FontAwesome") 字体库
 
 * trasform 
-
-``` text
-功能：向元素应用2D或3D转换
+``` txt
+	 功能：向元素应用2D或3D转换
 	 语法：transform:none|transform=functions
 	 参数：
-	 	translate3d(x,y,z) 定义3D转化
-	 	rotate3d(x,y,z,angle) 定义3D旋转
-	 	scale3d(x,y,z,flex) 定义3D缩放
+	 translate3d(x,y,z) 定义3D转化
+	 rotate3d(x,y,z,angle) 定义3D旋转
+	 scale3d(x,y,z,flex) 定义3D缩放
 ```
