@@ -68,9 +68,25 @@ this demo use css3
 * trasform 
 ``` txt
 	 功能：向元素应用2D或3D转换
+	 优点：凡使用3d方式的都会调用硬件加速
 	 语法：transform:none|transform=functions
 	 参数：
-	 translate3d(x,y,z) 定义3D转化
-	 rotate3d(x,y,z,angle) 定义3D旋转
+	 translate3d(x,y,z) 定义3D转化,x,y,z取值任意，单位px
+	 rotate3d(x,y,z,angle) 定义3D旋转,x,y,z取值在0~1之间，angle是弧度
 	 scale3d(x,y,z,flex) 定义3D缩放
+```
+
+* 设置图标变形
+
+``` css
+.tooltip-effect-1 .tooltip-content{
+	/*定义在Y轴上转动*/
+	-webkit-transform: translate3d(0,10px,0) rotate3d(1,1,1,45deg); 
+	transform: translate3d(0,10px,0) rotate3d(1,1,1,45deg); 
+	/*将图形中心移动的X轴中心，Y轴最底部，
+	此属性只有所在元素在前面使用了transform才有效*/
+	-webkit-transform-origin:50% 100%;
+	transform-origin:50% 100%;
+}
+
 ```
