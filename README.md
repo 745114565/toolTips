@@ -90,3 +90,22 @@ this demo use css3
 }
 
 ```
+
+* 利用透明度 `opacity`属性 设置元素显示或隐藏
+  
+  
+      `opacity:0` 隐藏， `opacity:1`显示
+      
+*  `transition` 状态过渡属性
+
+``` txt
+    
+        功能：在一定时间区间内平滑地过渡指定属性值
+        语法：transition:property duration timing-function delay
+        参数：
+            -- property 规定设置过渡效果css属性的名称
+	    -- duration 规定完成过渡效果需要多少秒或毫秒
+	    -- timing-function 规定速度效果的速度曲线
+	    -- transition-delay 定义过渡效果何时开始
+	    
+ ```
