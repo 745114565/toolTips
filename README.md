@@ -141,3 +141,54 @@ this demo use css3
  
  ```
  
+ * 2、3、4、5 的动画效果
+ 
+ ``` css
+ /*第二个图标下移20px*/
+.tooltip-effect-2 .tooltip-content{
+	-webkit-transform: translate3d(0,20px,0); 
+	transform: translate3d(0,20px,0); 
+}
+/*第二个气泡中的图标下移20px*/
+.tooltip-effect-2 .tooltip-content i { 
+	-webkit-transform: translate3d(0,10px,0);
+	transform: translate3d(0,10px,0);
+}
+/*第三个图标沿着y轴旋转一周*/
+.tooltip-effect-3 .tooltip-content{
+	/*定义在Y轴上转动*/
+	-webkit-transform: rotate3d(0,1,0,180deg); 
+	transform: rotate3d(0,1,0,180deg); 
+	-webkit-transform-origin: 50% 100%;
+	transform-origin: 50% 100%;
+}
+/*第三个气泡中的图标沿着大小*/
+.tooltip-effect-3 .tooltip-content i { 
+	-webkit-transform: scale3d(0,0,1);
+	transform: scale3d(0,0,1);
+}
+/*第四个图标沿着y轴向上移动20px*/
+.tooltip-effect-4 .tooltip-content{
+	-webkit-transform: translate3d(0,-20px,0);
+	transform: translate3d(0,-20px,0); 
+}
+/*第三个气泡中的图标不动*/
+.tooltip-effect-4 .tooltip-content i { 
+	-webkit-transform: translate3d(0,20px,0);
+	transform: translate3d(0,20px,0);
+}
+/*第五个图标大小变化*/
+.tooltip-effect-5 .tooltip-content{
+	-webkit-transform: scale3d(0,0,1); 
+	transform: scale3d(0,0,1); 
+	-webkit-transform-origin: 50% 100%;
+	transform-origin: 50% 100%;
+}
+/*第五个气泡中的图标由下向上移动*/
+.tooltip-effect-5 .tooltip-content i { 
+	-webkit-transform: translate3d(0,20px,0);
+	transform: translate3d(0,20px,0);
+}
+ 
+ ```
+ 
