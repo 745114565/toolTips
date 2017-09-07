@@ -109,3 +109,35 @@ this demo use css3
 	    -- transition-delay 定义过渡效果何时开始
 	    
  ```
+   例子：
+ 
+ ```css
+ /*添加过渡属性*/
+.tooltip-content,.tooltip-content i {
+	opacity: 0;
+	-webkit-transition: opacity 0.3s,-webkit-transform 0.3s;
+	transition: opacity 0.3s,transform 0.3s;
+ }
+ /*添加过渡属性 第二种写法（过渡所有变化了的属性）*/
+ .tooltip-content,.tooltip-content i {
+	opacity: 0;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+ }
+ 
+ 
+ ```
+ 
+ * 让所有的变形都恢复到最初
+ 
+ ``` css
+ 
+ .tooltip:hover .tooltip-content,
+ .tooltip:hover .tooltip-content i{
+	opacity: 1;
+	-webkit-transform:translate3d(0,0,0) rotate3d(1,1,1,0) scale3d(1,1,1);
+	transform:translate3d(0,0,0) rotate3d(1,1,1,0) scale3d(1,1,1);
+ }
+ 
+ ```
+ 
